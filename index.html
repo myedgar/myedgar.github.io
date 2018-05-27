@@ -5,17 +5,17 @@
   
 
   
-  <title>Hexo</title>
+  <title>Edgar Sun</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:title" content="Edgar Sun">
+<meta property="og:url" content="http://myedgar.github.io/index.html">
+<meta property="og:site_name" content="Edgar Sun">
 <meta property="og:locale" content="default">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="Edgar Sun">
   
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+    <link rel="alternate" href="/myedgar/atom.xml" title="Edgar Sun" type="application/atom+xml">
   
   
     <link rel="icon" href="/favicon.png">
@@ -23,7 +23,7 @@
   
     <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
   
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/myedgar/css/style.css">
 </head>
 
 <body>
@@ -34,7 +34,7 @@
   <div id="header-outer" class="outer">
     <div id="header-title" class="inner">
       <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
+        <a href="/myedgar/" id="logo">Edgar Sun</a>
       </h1>
       
     </div>
@@ -42,19 +42,19 @@
       <nav id="main-nav">
         <a id="main-nav-toggle" class="nav-icon"></a>
         
-          <a class="main-nav-link" href="/">Home</a>
+          <a class="main-nav-link" href="/myedgar/">Home</a>
         
-          <a class="main-nav-link" href="/archives">Archives</a>
+          <a class="main-nav-link" href="/myedgar/archives">Archives</a>
         
       </nav>
       <nav id="sub-nav">
         
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+          <a id="nav-rss-link" class="nav-icon" href="/myedgar/atom.xml" title="RSS Feed"></a>
         
         <a id="nav-search-btn" class="nav-icon" title="Search"></a>
       </nav>
       <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://myedgar.github.io"></form>
       </div>
     </div>
   </div>
@@ -64,7 +64,7 @@
   
     <article id="post-LeetCode26" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2018/05/27/LeetCode26/" class="article-date">
+    <a href="/myedgar/undefined/05/27/LeetCode26/" class="article-date">
   <time datetime="2018-05-27T13:13:03.000Z" itemprop="datePublished">2018-05-27</time>
 </a>
     
@@ -76,7 +76,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/05/27/LeetCode26/">Remove Duplicates from Sorted Array</a>
+      <a class="article-title" href="/myedgar/undefined/05/27/LeetCode26/">Remove Duplicates from Sorted Array</a>
     </h1>
   
 
@@ -84,12 +84,12 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>#Leetode第26题：从已排序数组中移除重复数字<br>1.解决思路：整个数组循环一次，循环使用i，同时设定一个j，表示新的没有重复的数组最末尾。比较当前nums[i]与nums[j]是否相等，如果相等，也就是重复，继续循环，j不变。否则，nums[++j]=nums[i].<br>2.代码实现<br>    int removeDuplicates(int* nums, int numsSize) {<br>      int i,j;<br>         if(numsSize == 0)<br>         {<br>            return 0;<br>          }<br>        for(i = 0, j = 0; i &lt; numsSize; i++){<br>        if(nums[i] != nums[j]){<br>              nums[++j] = nums[i];<br>               }<br>         }<br>          return j+1;<br>    }<br>3.最后运行时间如下图<br><img src="/2018/05/27/LeetCode26/leetcode26.jpg" title="运行时间图"></p>
+        <p>#Leetode第26题：从已排序数组中移除重复数字<br>1.解决思路：整个数组循环一次，循环使用i，同时设定一个j，表示新的没有重复的数组最末尾。比较当前nums[i]与nums[j]是否相等，如果相等，也就是重复，继续循环，j不变。否则，nums[++j]=nums[i].<br>2.代码实现<br>    int removeDuplicates(int* nums, int numsSize) {<br>      int i,j;<br>         if(numsSize == 0)<br>         {<br>            return 0;<br>          }<br>        for(i = 0, j = 0; i &lt; numsSize; i++){<br>        if(nums[i] != nums[j]){<br>              nums[++j] = nums[i];<br>               }<br>         }<br>          return j+1;<br>    }<br>3.最后运行时间如下图<br><img src="/myedgar/undefined/05/27/LeetCode26/leetcode26.jpg" title="运行时间图"></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/05/27/LeetCode26/" data-id="cjhoww0dt000002jxbhflyq26" class="article-share-link">Share</a>
+      <a data-url="http://myedgar.github.io/undefined/05/27/LeetCode26/" data-id="cjhoyhcej0000tjjx06vuv29c" class="article-share-link">Share</a>
       
       
     </footer>
@@ -117,7 +117,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">May 2018</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/myedgar/archives/2018/05/">May 2018</a></li></ul>
     </div>
   </div>
 
@@ -130,7 +130,7 @@
       <ul>
         
           <li>
-            <a href="/2018/05/27/LeetCode26/">Remove Duplicates from Sorted Array</a>
+            <a href="/myedgar/undefined/05/27/LeetCode26/">Remove Duplicates from Sorted Array</a>
           </li>
         
       </ul>
@@ -153,9 +153,9 @@
     </div>
     <nav id="mobile-nav">
   
-    <a href="/" class="mobile-nav-link">Home</a>
+    <a href="/myedgar/" class="mobile-nav-link">Home</a>
   
-    <a href="/archives" class="mobile-nav-link">Archives</a>
+    <a href="/myedgar/archives" class="mobile-nav-link">Archives</a>
   
 </nav>
     
@@ -163,11 +163,11 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+  <link rel="stylesheet" href="/myedgar/fancybox/jquery.fancybox.css">
+  <script src="/myedgar/fancybox/jquery.fancybox.pack.js"></script>
 
 
-<script src="/js/script.js"></script>
+<script src="/myedgar/js/script.js"></script>
 
 
 

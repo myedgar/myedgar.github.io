@@ -62,6 +62,67 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-LeetCode83" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/undefined/05/30/LeetCode83/" class="article-date">
+  <time datetime="2018-05-30T13:25:32.000Z" itemprop="datePublished">2018-05-30</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/undefined/05/30/LeetCode83/">Remove Duplicates from Sorted List</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><strong>Leetcode83题1.问题:</strong><br>Given a sorted linked list, delete all duplicates such that each element appear only once.<br><strong>2.思路：</strong><br>该题和第26题解法一样，只不过26题是数组，本题是链表<br><strong>3.实现：</strong></p>
+<pre><code>/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     struct ListNode *next;
+ * };
+ */
+struct ListNode* deleteDuplicates(struct ListNode* head) 
+{
+    struct ListNode *p, *q;
+    if(head == NULL){
+    return NULL;
+    }
+    p = q = head;
+    while(p != NULL){
+    if(p-&gt;val != q-&gt;val){
+        q-&gt;next = p;
+        q = q-&gt;next;
+    }
+    p = p-&gt;next;
+    }
+    q-&gt;next = NULL;
+    return head;
+}
+</code></pre>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://myedgar.github.io/undefined/05/30/LeetCode83/" data-id="cjht5gfxp00010sjx2lq6w4l7" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-Leetcode48" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/undefined/05/29/Leetcode48/" class="article-date">
@@ -110,7 +171,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://myedgar.github.io/undefined/05/29/Leetcode48/" data-id="cjhr6gz490001mnjxl1kbw4rf" class="article-share-link">Share</a>
+      <a data-url="http://myedgar.github.io/undefined/05/29/Leetcode48/" data-id="cjht5gfxt00020sjx2n5v1551" class="article-share-link">Share</a>
       
       
     </footer>
@@ -161,7 +222,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://myedgar.github.io/undefined/05/27/LeetCode26/" data-id="cjhr6gz410000mnjxqeqss66v" class="article-share-link">Share</a>
+      <a data-url="http://myedgar.github.io/undefined/05/27/LeetCode26/" data-id="cjht5gfxg00000sjx4owjwsc2" class="article-share-link">Share</a>
       
       
     </footer>
@@ -200,6 +261,10 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/undefined/05/30/LeetCode83/">Remove Duplicates from Sorted List</a>
+          </li>
         
           <li>
             <a href="/undefined/05/29/Leetcode48/">Rotate Image</a>

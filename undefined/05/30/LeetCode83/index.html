@@ -5,15 +5,19 @@
   
 
   
-  <title>Archives: 2018 | Edgar Sun</title>
+  <title>Remove Duplicates from Sorted List | Edgar Sun</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Edgar Sun">
-<meta property="og:url" content="http://myedgar.github.io/archives/2018/index.html">
+  <meta name="description" content="Leetcode83题1.问题:Given a sorted linked list, delete all duplicates such that each element appear only once.2.思路：该题和第26题解法一样，只不过26题是数组，本题是链表3.实现： /**  * Definition for singly-linked list.  * struct List">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Remove Duplicates from Sorted List">
+<meta property="og:url" content="http://myedgar.github.io/undefined/05/30/LeetCode83/index.html">
 <meta property="og:site_name" content="Edgar Sun">
+<meta property="og:description" content="Leetcode83题1.问题:Given a sorted linked list, delete all duplicates such that each element appear only once.2.思路：该题和第26题解法一样，只不过26题是数组，本题是链表3.实现： /**  * Definition for singly-linked list.  * struct List">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-05-30T13:34:37.299Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Edgar Sun">
+<meta name="twitter:title" content="Remove Duplicates from Sorted List">
+<meta name="twitter:description" content="Leetcode83题1.问题:Given a sorted linked list, delete all duplicates such that each element appear only once.2.思路：该题和第26题解法一样，只不过26题是数组，本题是链表3.实现： /**  * Definition for singly-linked list.  * struct List">
   
     <link rel="alternate" href="/atom.xml" title="Edgar Sun" type="application/atom+xml">
   
@@ -60,78 +64,76 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/undefined/05/30/LeetCode83/" class="archive-article-date">
-  <time datetime="2018-05-30T13:25:32.000Z" itemprop="datePublished">May 30</time>
+        <section id="main"><article id="post-LeetCode83" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/undefined/05/30/LeetCode83/" class="article-date">
+  <time datetime="2018-05-30T13:25:32.000Z" itemprop="datePublished">2018-05-30</time>
 </a>
-      
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/undefined/05/30/LeetCode83/">Remove Duplicates from Sorted List</a>
+    <h1 class="article-title" itemprop="name">
+      Remove Duplicates from Sorted List
     </h1>
   
 
-    </header>
-  </div>
-</article>
-  
+      </header>
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/undefined/05/29/Leetcode48/" class="archive-article-date">
-  <time datetime="2018-05-29T19:13:03.000Z" itemprop="datePublished">May 29</time>
-</a>
+    <div class="article-entry" itemprop="articleBody">
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/undefined/05/29/Leetcode48/">Rotate Image</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/undefined/05/27/LeetCode26/" class="archive-article-date">
-  <time datetime="2018-05-27T13:13:03.000Z" itemprop="datePublished">May 27</time>
-</a>
+        <p><strong>Leetcode83题1.问题:</strong><br>Given a sorted linked list, delete all duplicates such that each element appear only once.<br><strong>2.思路：</strong><br>该题和第26题解法一样，只不过26题是数组，本题是链表<br><strong>3.实现：</strong></p>
+<pre><code>/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     struct ListNode *next;
+ * };
+ */
+struct ListNode* deleteDuplicates(struct ListNode* head) 
+{
+    struct ListNode *p, *q;
+    if(head == NULL){
+    return NULL;
+    }
+    p = q = head;
+    while(p != NULL){
+    if(p-&gt;val != q-&gt;val){
+        q-&gt;next = p;
+        q = q-&gt;next;
+    }
+    p = p-&gt;next;
+    }
+    q-&gt;next = NULL;
+    return head;
+}
+</code></pre>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/undefined/05/27/LeetCode26/">Remove Duplicates from Sorted Array</a>
-    </h1>
-  
-
-    </header>
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://myedgar.github.io/undefined/05/30/LeetCode83/" data-id="cjht5gfxp00010sjx2lq6w4l7" class="article-share-link">Share</a>
+      
+      
+    </footer>
   </div>
-</article>
+  
+    
+<nav id="article-nav">
   
   
-    </div></section>
+    <a href="/undefined/05/29/Leetcode48/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Rotate Image</div>
+    </a>
   
+</nav>
 
+  
+</article>
 
 </section>
         

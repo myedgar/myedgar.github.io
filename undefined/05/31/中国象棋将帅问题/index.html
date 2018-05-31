@@ -5,21 +5,19 @@
   
 
   
-  <title>Remove Duplicates from Sorted Array | Edgar Sun</title>
+  <title>中国象棋将帅问题 | Edgar Sun</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="#Leetode第26题：从已排序数组中移除重复数字1.解决思路：整个数组循环一次，循环使用i，同时设定一个j，表示新的没有重复的数组最末尾。比较当前nums[i]与nums[j]是否相等，如果相等，也就是重复，继续循环，j不变。否则，nums[++j]=nums[i].2.代码实现   int removeDuplicates(int* nums, int numsSize) {     int">
+  <meta name="description" content="#本题选自《编程之美》1.2：中国象棋将帅问题。代码如下 #define HALF_BITS_LENGTH 4 #define FULLMASK 255 #define LMASK (FULLMASK &amp;lt;&amp;lt; HALF_BITS_LENGTH) #define RMASK (FULLMASK &amp;gt;&amp;gt; HALF_BITS_LENGTH) #define LSET(b, n) (b">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Remove Duplicates from Sorted Array">
-<meta property="og:url" content="http://myedgar.github.io/undefined/05/27/LeetCode26/index.html">
+<meta property="og:title" content="中国象棋将帅问题">
+<meta property="og:url" content="http://myedgar.github.io/undefined/05/31/中国象棋将帅问题/index.html">
 <meta property="og:site_name" content="Edgar Sun">
-<meta property="og:description" content="#Leetode第26题：从已排序数组中移除重复数字1.解决思路：整个数组循环一次，循环使用i，同时设定一个j，表示新的没有重复的数组最末尾。比较当前nums[i]与nums[j]是否相等，如果相等，也就是重复，继续循环，j不变。否则，nums[++j]=nums[i].2.代码实现   int removeDuplicates(int* nums, int numsSize) {     int">
+<meta property="og:description" content="#本题选自《编程之美》1.2：中国象棋将帅问题。代码如下 #define HALF_BITS_LENGTH 4 #define FULLMASK 255 #define LMASK (FULLMASK &amp;lt;&amp;lt; HALF_BITS_LENGTH) #define RMASK (FULLMASK &amp;gt;&amp;gt; HALF_BITS_LENGTH) #define LSET(b, n) (b">
 <meta property="og:locale" content="default">
-<meta property="og:image" content="http://myedgar.github.io/undefined/05/27/LeetCode26/leetcode26.jpg">
-<meta property="og:updated_time" content="2018-05-29T04:29:29.513Z">
+<meta property="og:updated_time" content="2018-05-31T13:29:51.442Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Remove Duplicates from Sorted Array">
-<meta name="twitter:description" content="#Leetode第26题：从已排序数组中移除重复数字1.解决思路：整个数组循环一次，循环使用i，同时设定一个j，表示新的没有重复的数组最末尾。比较当前nums[i]与nums[j]是否相等，如果相等，也就是重复，继续循环，j不变。否则，nums[++j]=nums[i].2.代码实现   int removeDuplicates(int* nums, int numsSize) {     int">
-<meta name="twitter:image" content="http://myedgar.github.io/undefined/05/27/LeetCode26/leetcode26.jpg">
+<meta name="twitter:title" content="中国象棋将帅问题">
+<meta name="twitter:description" content="#本题选自《编程之美》1.2：中国象棋将帅问题。代码如下 #define HALF_BITS_LENGTH 4 #define FULLMASK 255 #define LMASK (FULLMASK &amp;lt;&amp;lt; HALF_BITS_LENGTH) #define RMASK (FULLMASK &amp;gt;&amp;gt; HALF_BITS_LENGTH) #define LSET(b, n) (b">
   
     <link rel="alternate" href="/atom.xml" title="Edgar Sun" type="application/atom+xml">
   
@@ -66,10 +64,10 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-LeetCode26" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-中国象棋将帅问题" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/undefined/05/27/LeetCode26/" class="article-date">
-  <time datetime="2018-05-27T13:13:03.000Z" itemprop="datePublished">2018-05-27</time>
+    <a href="/undefined/05/31/中国象棋将帅问题/" class="article-date">
+  <time datetime="2018-05-31T13:23:10.000Z" itemprop="datePublished">2018-05-31</time>
 </a>
     
   </div>
@@ -80,7 +78,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      Remove Duplicates from Sorted Array
+      中国象棋将帅问题
     </h1>
   
 
@@ -88,26 +86,49 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>#Leetode第26题：从已排序数组中移除重复数字<br>1.解决思路：整个数组循环一次，循环使用i，同时设定一个j，表示新的没有重复的数组最末尾。比较当前nums[i]与nums[j]是否相等，如果相等，也就是重复，继续循环，j不变。否则，nums[++j]=nums[i].<br>2.代码实现  </p>
-<pre><code>int removeDuplicates(int* nums, int numsSize) {  
-  int i,j;  
-     if(numsSize == 0)  
-     {  
-        return 0;    
-      }  
-    for(i = 0, j = 0; i &lt; numsSize; i++){  
-    if(nums[i] != nums[j]){  
-          nums[++j] = nums[i];  
-           }  
-     }  
-      return j+1;  
-}  
-</code></pre><p>3.最后运行时间如下图<br><img src="/undefined/05/27/LeetCode26/leetcode26.jpg" title="运行时间图"></p>
+        <p>#本题选自《编程之美》1.2：中国象棋将帅问题。<br><strong>代码如下</strong></p>
+<pre><code>#define HALF_BITS_LENGTH 4
+#define FULLMASK 255
+#define LMASK (FULLMASK &lt;&lt; HALF_BITS_LENGTH)
+#define RMASK (FULLMASK &gt;&gt; HALF_BITS_LENGTH)
+#define LSET(b, n) (b = (b &amp; RMASK) | (n &lt;&lt; HALF_BITS_LENGTH))
+#define RSET(b, n) (b = (b &amp; LMASK) | n)
+#define LGET(b) (b &gt;&gt; HALF_BITS_LENGTH)
+#define RGET(b) (b &amp; RMASK)
+#define GRID 3
 
+#include &lt;stdio.h&gt;
+
+int main()
+{
+    unsigned char b;
+
+    for (LSET(b, 1); LGET(b) &lt;= GRID * GRID; LSET(b, (LGET(b) + 1))){
+    for (RSET(b, 1); RGET(b) &lt;= GRID * GRID; RSET(b, (RGET(b) + 1))){
+        if (LGET(b) % GRID != RGET(b) % GRID){
+            printf(&quot;A = %d, B = %d  \t&quot;, LGET(b), RGET(b));
+        }
+    }
+    printf(&quot;\n&quot;);
+    }
+
+    return 0;
+}
+</code></pre><p><strong>结果如下：</strong></p>
+<pre><code>A = 1, B = 2      A = 1, B = 3      A = 1, B = 5      A = 1, B = 6      A = 1, B = 8      A = 1, B = 9      
+A = 2, B = 1      A = 2, B = 3      A = 2, B = 4      A = 2, B = 6      A = 2, B = 7      A = 2, B = 9      
+A = 3, B = 1      A = 3, B = 2      A = 3, B = 4      A = 3, B = 5      A = 3, B = 7      A = 3, B = 8      
+A = 4, B = 2      A = 4, B = 3      A = 4, B = 5      A = 4, B = 6      A = 4, B = 8      A = 4, B = 9      
+A = 5, B = 1      A = 5, B = 3      A = 5, B = 4      A = 5, B = 6      A = 5, B = 7      A = 5, B = 9      
+A = 6, B = 1      A = 6, B = 2      A = 6, B = 4      A = 6, B = 5      A = 6, B = 7      A = 6, B = 8      
+A = 7, B = 2      A = 7, B = 3      A = 7, B = 5      A = 7, B = 6      A = 7, B = 8      A = 7, B = 9      
+A = 8, B = 1      A = 8, B = 3      A = 8, B = 4      A = 8, B = 6      A = 8, B = 7      A = 8, B = 9      
+A = 9, B = 1      A = 9, B = 2      A = 9, B = 4      A = 9, B = 5      A = 9, B = 7      A = 9, B = 8      
+</code></pre>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://myedgar.github.io/undefined/05/27/LeetCode26/" data-id="cjhukuf3k00030djx2llvkg9s" class="article-share-link">Share</a>
+      <a data-url="http://myedgar.github.io/undefined/05/31/中国象棋将帅问题/" data-id="cjhukuf3i00020djxzztz2qa8" class="article-share-link">Share</a>
       
       
     </footer>
@@ -116,15 +137,11 @@
     
 <nav id="article-nav">
   
-    <a href="/undefined/05/29/Leetcode48/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          Rotate Image
-        
-      </div>
-    </a>
   
+    <a href="/undefined/05/30/LeetCode83/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Remove Duplicates from Sorted List</div>
+    </a>
   
 </nav>
 
